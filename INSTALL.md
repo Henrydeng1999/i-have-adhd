@@ -1,5 +1,8 @@
 # How to install
 
+Henry Focus is the canonical Codex plugin in this fork. The other sections are
+retained as compatibility documentation for the upstream platform adapters.
+
 <details>
 <summary><strong>Antigravity (<code>agy</code>)</strong></summary>
 
@@ -119,12 +122,11 @@ The hook only fires when the flag file exists, so installing the plugin changes 
 ### Install
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace add Henrydeng1999/i-have-adhd --ref main
+codex plugin add henry-focus@henry-focus
 ```
 
-Invoke the skill explicitly by typing `$i-have-adhd`. Codex will not activate
-it automatically.
+Invoke the skill explicitly by typing `$henry-focus`.
 
 ### Verify
 
@@ -135,16 +137,16 @@ codex plugin list
 ### Update
 
 ```bash
-codex plugin marketplace upgrade i-have-adhd
-codex plugin remove i-have-adhd
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace upgrade henry-focus
+codex plugin remove henry-focus
+codex plugin add henry-focus@henry-focus
 ```
 
 ### Uninstall
 
 ```bash
-codex plugin remove i-have-adhd
-codex plugin marketplace remove i-have-adhd
+codex plugin remove henry-focus
+codex plugin marketplace remove henry-focus
 ```
 
 ### Always-on (optional)
@@ -152,22 +154,10 @@ codex plugin marketplace remove i-have-adhd
 Add to `~/.codex/AGENTS.md`:
 
 ```markdown
-## Output style
-
-The reader has ADHD. Shape every response so it can be acted on:
-
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Rank and group long lists; aim for at most five items per group without omitting relevant items.
-10. No preamble, no recaps, no closers.
-
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+For coding, debugging, research, technical analysis, and multi-step tasks, consider
+using `henry-focus` when it would reduce cognitive switching or make the next
+action clearer. Do not force it onto unrelated chat or formal artifacts.
+Preserve technical depth and evidence boundaries.
 ```
 
 </details>

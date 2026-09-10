@@ -1,0 +1,7 @@
+interface:
+  display_name: "Henry Focus"
+  short_description: "Focus layer for research, coding, and debugging"
+  default_prompt: "Use $henry-focus to make this response easier to execute without removing necessary technical depth."
+
+policy:
+  allow_implicit_invocation: true

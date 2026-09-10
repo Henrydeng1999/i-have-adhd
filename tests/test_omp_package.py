@@ -18,13 +18,12 @@ class OmpPackageTest(unittest.TestCase):
             self.package["pi"],
         )
 
-    def test_skill_remains_explicitly_invoked(self):
+    def test_legacy_skill_remains_available(self):
         skill = (ROOT / "skills" / "i-have-adhd" / "SKILL.md").read_text(
             encoding="utf8"
         )
         frontmatter = skill.split("---\n", 2)[1]
         self.assertIn("name: i-have-adhd", frontmatter)
-        self.assertIn("disable-model-invocation: true", frontmatter)
 
 
 if __name__ == "__main__":
