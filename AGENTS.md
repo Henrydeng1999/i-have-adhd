@@ -27,6 +27,6 @@ python -m json.tool .agents/plugins/marketplace.json >/dev/null
 Confirm that `skills/henry-focus/SKILL.md` has valid YAML frontmatter and that the Codex install command remains:
 
 ```bash
-codex plugin marketplace add Henrydeng1999/i-have-adhd --ref main
+codex plugin marketplace add https://gitee.com/Henrydeng1999/i-have-adhd.git --ref main
 codex plugin add henry-focus@henry-focus
 ```

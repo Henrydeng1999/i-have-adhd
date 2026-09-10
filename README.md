@@ -17,7 +17,7 @@ Henry Focus is not a short-answer mode. It reduces cognitive switching, exposes 
 ## Install in Codex
 
 ```bash
-codex plugin marketplace add Henrydeng1999/i-have-adhd --ref main
+codex plugin marketplace add https://gitee.com/Henrydeng1999/i-have-adhd.git --ref main
 codex plugin add henry-focus@henry-focus
 ```
 

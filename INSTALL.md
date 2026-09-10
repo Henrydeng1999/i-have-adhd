@@ -122,7 +122,7 @@ The hook only fires when the flag file exists, so installing the plugin changes 
 ### Install
 
 ```bash
-codex plugin marketplace add Henrydeng1999/i-have-adhd --ref main
+codex plugin marketplace add https://gitee.com/Henrydeng1999/i-have-adhd.git --ref main
 codex plugin add henry-focus@henry-focus
 ```
 
